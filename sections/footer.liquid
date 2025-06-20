@@ -27,7 +27,7 @@
     }
 {%- endstyle -%}
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding modern-footer">
     {%- liquid
         assign has_social_icons = true
         if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
@@ -129,7 +129,9 @@
                                                 <div class="rte">{{ settings.brand_description }}</div>
                                             {%- endif -%}
                                             {%- if block.settings.show_social and has_social_icons -%}
-                                                {%- render 'social-icons', class: 'footer__list-social' -%}
+                                                <div class="footer-block__social">
+                                                    {%- render 'social-icons', class: 'footer__list-social' -%}
+                                                </div>
                                             {%- endif -%}
                                         </div>
                                     {%- when 'image' -%}
@@ -204,16 +206,16 @@
                                                 id="Subscribe"
                                                 aria-label="{{ 'newsletter.button_label' | t }}"
                                         >
-                      <span class="svg-wrapper">
-                        {{- 'icon-arrow.svg' | inline_asset_content -}}
-                      </span>
+                                          <span class="svg-wrapper">
+                                            <i data-feather="send" class="icon"></i>
+                                          </span>
                                         </button>
                                     </div>
                                     {%- if form.errors -%}
                                         <small class="newsletter-form__message form__message" id="ContactFooter-error">
-                      <span class="svg-wrapper">
-                        {{- 'icon-error.svg' | inline_asset_content -}}
-                      </span>
+                                          <span class="svg-wrapper">
+                                            <i data-feather="alert-circle" class="icon"></i>
+                                          </span>
                                             {{- form.errors.translated_fields.email | capitalize }}
                                             {{ form.errors.messages.email -}}
                                         </small>
@@ -226,9 +228,9 @@
                                             tabindex="-1"
                                             autofocus
                                     >
-                    <span class="svg-wrapper">
-                      {{- 'icon-success.svg' | inline_asset_content -}}
-                    </span>
+                                    <span class="svg-wrapper">
+                                      <i data-feather="check-circle" class="icon"></i>
+                                    </span>
                                         {{- 'newsletter.success' | t }}
                                     </h3>
                                 {%- endif -%}
@@ -243,7 +245,9 @@
                     {%- endif -%}
 
                     {%- if section.settings.show_social and has_social_icons -%}
-                        {%- render 'social-icons', class: 'footer__list-social' -%}
+                        <div class="footer__social">
+                            {%- render 'social-icons', class: 'footer__list-social' -%}
+                        </div>
                     {%- endif -%}
                 </div>
             </div>
@@ -323,6 +327,13 @@
         </div>
     </div>
 </footer>
+
+<script>
+  // Initialize Feather Icons for the footer after the page loads
+  document.addEventListener('DOMContentLoaded', function() {
+    feather.replace();
+  });
+</script>
 
 {% schema %}
 {

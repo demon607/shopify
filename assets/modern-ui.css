@@ -1,0 +1,260 @@
+/* Modern UI Components for Ravechi Collection
+ * Inspired by Scooboo.in design aesthetic
+ */
+
+/* Modern Header Styles */
+.header {
+  box-shadow: var(--shadow-sm);
+  background-color: var(--color-bg-light);
+}
+
+.header__heading-logo {
+  max-height: 40px;
+  width: auto;
+}
+
+.header__menu-item {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: color var(--transition-fast);
+}
+
+.header__menu-item:hover {
+  color: var(--color-primary);
+}
+
+.header__icon {
+  color: var(--color-text-primary);
+}
+
+/* Modern Navigation */
+.list-menu__item--link {
+  position: relative;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.list-menu__item--link:hover {
+  color: var(--color-primary);
+}
+
+.list-menu__item--link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-primary);
+  transition: width var(--transition-normal);
+}
+
+.list-menu__item--link:hover:after {
+  width: 100%;
+}
+
+/* Modern Card Styles */
+.card {
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  overflow: hidden;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.card__inner {
+  background-color: var(--color-bg-light);
+  height: 100%;
+}
+
+.card__content {
+  padding: var(--space-md);
+}
+
+.card-product h3 {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: var(--space-sm);
+}
+
+.card-product .price {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+/* Modern Button Styles */
+.button {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  border-radius: var(--border-radius-md);
+  padding: var(--space-sm) var(--space-md);
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.button--primary {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+}
+
+.button--secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+}
+
+/* Modern Form Elements */
+.field__input {
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--color-border);
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font-primary);
+  transition: border var(--transition-fast);
+}
+
+.field__input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(74, 109, 229, 0.2);
+}
+
+/* Modern Footer */
+.footer {
+  background-color: var(--color-bg-subtle);
+  border-top: 1px solid var(--color-border);
+}
+
+.footer-block__heading {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: var(--space-md);
+}
+
+.footer-block__details-content {
+  font-family: var(--font-primary);
+}
+
+.footer-block__details-content .link {
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.footer-block__details-content .link:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* Modern Collection Grid */
+.collection {
+  margin: var(--space-xl) 0;
+}
+
+.collection__title {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+/* Modern Product Page */
+.product__title {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 2.8rem;
+  margin-bottom: var(--space-md);
+}
+
+.product__price {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: var(--space-lg);
+}
+
+.product__description {
+  font-family: var(--font-primary);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-lg);
+}
+
+/* Utility Classes */
+.section-title {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-light {
+  background-color: var(--color-bg-light);
+}
+
+.bg-subtle {
+  background-color: var(--color-bg-subtle);
+}
+
+/* Modern Icons */
+.icon {
+  stroke-width: 1.5;
+  vertical-align: middle;
+}
+
+/* Modern Badge */
+.badge {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--border-radius-sm);
+}
+
+.badge--sale {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.badge--new {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Modern Cart */
+.cart-notification {
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 749px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .product__title {
+    font-size: 2.2rem;
+  }
+}
