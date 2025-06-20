@@ -1,0 +1,349 @@
+
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Welcome to Ravechi Collection",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Stay Tuned with us...",
+            "heading_size": "h1"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image_overlay_opacity": 40,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_mVFWy4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/JAGS.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/jags"
+          }
+        },
+        "column6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Pidilite_808759c3-b2a2-47af-af76-402ec424a1e0.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column5": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Camlin_Kokuyo_3592c74f-92c2-4657-b669-54767ad9b46d.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/camlin"
+          }
+        },
+        "column4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/brustro_d872f77f-9420-4bec-b647-fd22c1059884.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/brustro"
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Staedtler_logo_e5ff940f-3503-4b14-ba39-ec9774a85b57.svg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/staedtler"
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Liquitex_logo_78c76921-ff20-4644-a07f-55bcd45e7770.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/liquitex"
+          }
+        }
+      },
+      "block_order": [
+        "column_mVFWy4",
+        "column6",
+        "column5",
+        "column4",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "hxl",
+        "image_width": "full",
+        "image_ratio": "square",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 20,
+        "padding_bottom": 12
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Exclusive Products | Exclusive pricing </p>"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 4,
+        "padding_bottom": 4
+      }
+    },
+    "featured_collection1": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "resin-and-more",
+        "products_to_show": 10,
+        "title": "Proven bestsellers",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "bulk",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "brustro"
+          }
+        },
+        "featured_collection3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "camlin"
+          }
+        },
+        "featured_collection2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "resin-and-more"
+          }
+        },
+        "featured_collection4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "jags"
+          }
+        },
+        "featured_collection5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "art-and-craft"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection1",
+        "featured_collection3",
+        "featured_collection2",
+        "featured_collection4",
+        "featured_collection5"
+      ],
+      "settings": {
+        "title": "Shop our top categories",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 5,
+        "color_scheme": "scheme-4",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 48,
+        "padding_bottom": 60
+      }
+    },
+    "multicolumn1": {
+      "type": "multicolumn",
+      "blocks": {
+        "column7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Staedtler_logo.svg",
+            "title": "Staedtler",
+            "text": "",
+            "link_label": "Shop now",
+            "link": ""
+          }
+        },
+        "column8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Liquitex_logo_78c76921-ff20-4644-a07f-55bcd45e7770.png",
+            "title": "Creta Color",
+            "text": "",
+            "link_label": "Shop now",
+            "link": "shopify://collections/liquitex"
+          }
+        },
+        "column9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/brustro_d872f77f-9420-4bec-b647-fd22c1059884.png",
+            "title": "Brustro",
+            "text": "",
+            "link_label": "Shop now",
+            "link": "shopify://collections/brustro"
+          }
+        },
+        "column10": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Camlin_Kokuyo.png",
+            "title": "camlin",
+            "text": "",
+            "link_label": "Shop now",
+            "link": "shopify://collections/camlin"
+          }
+        }
+      },
+      "block_order": [
+        "column7",
+        "column8",
+        "column9",
+        "column10"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 68,
+        "padding_bottom": 68
+      }
+    },
+    "featured_collection2": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "jags",
+        "products_to_show": 6,
+        "title": "New arrivals",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 5,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "bulk",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "multicolumn",
+    "rich_text",
+    "featured_collection1",
+    "collection_list",
+    "multicolumn1",
+    "featured_collection2"
+  ]
+}
